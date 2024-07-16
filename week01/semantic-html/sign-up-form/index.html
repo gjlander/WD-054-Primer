@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bootcamp Registration</title>
+    </head>
+    <body>
+        <header>
+            <h1>Register for a Bootcamp!</h1>
+            <p>
+                Ready to change you life? Fill out this form to sign up for one
+                of our bootcamps!
+            </p>
+        </header>
+        <main>
+            <form>
+                <fieldset>
+                    <legend><h2>Sign Up Here</h2></legend>
+                    <label for="name">Name:</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        required
+                        placeholder="John Doe"
+                    />
+                    <br />
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        required
+                        placeholder="johndoe@example.com"
+                    />
+                    <br />
+                    <label for="telephone"
+                        >Telephone <br />
+                        <small>Format: 123-456-7890</small></label
+                    >
+                    <br />
+                    <input
+                        type="tel"
+                        name="telephone"
+                        id="telephone"
+                        required
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="123-456-7890"
+                    />
+                    <br />
+                    <label for="bootcamp">Bootcamp selection:</label> <br />
+                    <select name="bootcamp" id="bootcamp" required>
+                        <option value="">--Please select a bootcamp--</option>
+                        <option value="wd">Web Development</option>
+                        <option value="ds">Data Science</option>
+                        <option value="dpd">UX/UI Design</option>
+                    </select>
+                    <br />
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>
